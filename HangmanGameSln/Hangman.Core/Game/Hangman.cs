@@ -42,8 +42,14 @@ namespace Hangman.Core.Game
             wordsOfGame[22] = "psi";
             wordsOfGame[23] = "omega";
 
+            Random random = new Random();
+            string randomOfWords = wordsOfGame[random.Next(wordsOfGame.Length)];
+
             
-            
+           
+                
+                
+                
             Console.SetCursorPosition(0, 13);
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.Write("Your current guess: ");
